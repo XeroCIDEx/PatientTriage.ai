@@ -1,4 +1,5 @@
 # PatientTriage.ai
+## url: https://patienttriageai-kews8udysvkreor6nt5zrj.streamlit.app/
 # PatientTriage.ai — Working AI Decision-Support Prototype
 
 > ⚠️ **This prototype is an AI decision-support system for research/demo purposes
