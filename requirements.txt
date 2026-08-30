@@ -1,0 +1,9 @@
+numpy==2.4.4
+pandas==3.0.2
+scikit-learn==1.8.0
+scipy==1.17.1
+xgboost==3.4.1
+shap==0.52.0
+streamlit==1.62.0
+streamlit-autorefresh==1.0.1
+joblib==1.5.3

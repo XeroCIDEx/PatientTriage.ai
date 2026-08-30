@@ -1,0 +1,45 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+env/
+
+# Secrets
+.env
+*.env
+
+# Logs
+logs/
+*.log
+
+# Local databases
+*.db
+*.sqlite
+*.sqlite3
+
+# Generated data/output
+data/raw/
+data/processed/
+outputs/
+results/
+
+# Model artifacts
+models/*.pkl
+models/*.joblib
+models/*.pt
+models/*.pth
+models/*.h5
+models/*.keras
+
+# Jupyter
+.ipynb_checkpoints/
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db

@@ -1,0 +1,36 @@
+{
+  "results": [
+    {
+      "candidate": "A_LogisticRegression",
+      "accuracy": 0.6683333333333333,
+      "macro_f1": 0.6733865106297721,
+      "critical_recall": 0.8081632653061225,
+      "under_triage_rate": 0.18,
+      "mean_brier_score": 0.4534420543932289,
+      "train_time_sec": 0.4,
+      "inference_ms_per_patient": 0.003
+    },
+    {
+      "candidate": "B_LinearSVM_calibrated",
+      "accuracy": 0.6816666666666666,
+      "macro_f1": 0.6913240763915759,
+      "critical_recall": 0.7877551020408163,
+      "under_triage_rate": 0.175,
+      "mean_brier_score": 0.4353080373448917,
+      "train_time_sec": 0.44,
+      "inference_ms_per_patient": 0.007
+    },
+    {
+      "candidate": "C_MLP_2layer",
+      "accuracy": 0.725,
+      "macro_f1": 0.7267968839277004,
+      "critical_recall": 0.8326530612244898,
+      "under_triage_rate": 0.165,
+      "mean_brier_score": 0.38347545819937495,
+      "train_time_sec": 0.77,
+      "inference_ms_per_patient": 0.003
+    }
+  ],
+  "selected": "C_MLP_2layer",
+  "selection_rule": "highest critical-class recall, macro-F1 tiebreak"
+}

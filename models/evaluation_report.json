@@ -1,0 +1,140 @@
+{
+  "note": "All results below are computed on a SYNTHETIC, rule-labeled test set (see src/data_generation.py). These numbers describe how well each model recovers the synthetic labeling rule, NOT real-world clinical accuracy. No claim of clinical validity is made.",
+  "model1": {
+    "model": "Model1_XGBoost",
+    "accuracy": 0.8566666666666667,
+    "macro_f1": 0.8576327258470563,
+    "macro_precision": 0.873133613289476,
+    "macro_recall": 0.8480507620233648,
+    "per_class_recall": {
+      "1": 0.7272727272727273,
+      "2": 0.9047619047619048,
+      "3": 0.8082191780821918,
+      "4": 0.8947368421052632,
+      "5": 0.9052631578947369
+    },
+    "confusion_matrix": [
+      [
+        56,
+        18,
+        2,
+        1,
+        0
+      ],
+      [
+        5,
+        152,
+        6,
+        4,
+        1
+      ],
+      [
+        1,
+        21,
+        118,
+        6,
+        0
+      ],
+      [
+        0,
+        1,
+        7,
+        102,
+        4
+      ],
+      [
+        0,
+        0,
+        4,
+        5,
+        86
+      ]
+    ],
+    "confusion_matrix_labels": [
+      "ESI1",
+      "ESI2",
+      "ESI3",
+      "ESI4",
+      "ESI5"
+    ],
+    "under_triage_rate_overall": 0.07,
+    "under_triage_count": 42,
+    "over_triage_rate_overall": 0.07333333333333333,
+    "exact_match_rate": 0.8566666666666667,
+    "critical_critical_recall": 0.9428571428571428,
+    "critical_critical_missed_count": 14,
+    "critical_n_true_critical": 245,
+    "mean_confidence_correct": 0.8972470760345459,
+    "mean_confidence_incorrect": 0.6687286496162415
+  },
+  "model2": {
+    "model": "Model2_MLP",
+    "accuracy": 0.725,
+    "macro_f1": 0.7267968839277004,
+    "macro_precision": 0.7330012015400345,
+    "macro_recall": 0.7243696102023426,
+    "per_class_recall": {
+      "1": 0.6103896103896104,
+      "2": 0.7261904761904762,
+      "3": 0.6712328767123288,
+      "4": 0.7719298245614035,
+      "5": 0.8421052631578947
+    },
+    "confusion_matrix": [
+      [
+        47,
+        23,
+        6,
+        0,
+        1
+      ],
+      [
+        12,
+        122,
+        27,
+        5,
+        2
+      ],
+      [
+        4,
+        24,
+        98,
+        12,
+        8
+      ],
+      [
+        0,
+        2,
+        9,
+        88,
+        15
+      ],
+      [
+        0,
+        1,
+        8,
+        6,
+        80
+      ]
+    ],
+    "confusion_matrix_labels": [
+      "ESI1",
+      "ESI2",
+      "ESI3",
+      "ESI4",
+      "ESI5"
+    ],
+    "under_triage_rate_overall": 0.165,
+    "under_triage_count": 99,
+    "over_triage_rate_overall": 0.11,
+    "exact_match_rate": 0.725,
+    "critical_critical_recall": 0.8326530612244898,
+    "critical_critical_missed_count": 41,
+    "critical_n_true_critical": 245,
+    "mean_confidence_correct": 0.766821207588064,
+    "mean_confidence_incorrect": 0.6355898213046846
+  },
+  "model_disagreement_rate": 0.23833333333333334,
+  "insufficient_data_rate_proxy": 0.0033333333333333335,
+  "n_test_patients": 600
+}
